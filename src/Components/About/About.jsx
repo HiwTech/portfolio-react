@@ -7,24 +7,40 @@ function About() {
       <div className="about-content">
         <h2>About Me</h2>
         <p>
-          I’m <strong>Hiwot</strong>, a full stack web developer passionate
-          about building clean, scalable, and user-focused web applications with
-          a two years of coding experience, specializing in React and Node.js to
-          build clean, scalable, and interactive web applications. I thrive on
-          crafting seamless user experiences and writing efficient, maintainable
-          code across the front-end and back-end. My journey has been hands-on,
-          developing full-stack applications that showcase state management,
-          database integration, and API design. <br />
-          🔹
-          <strong>Development Philosophy:</strong> I focus on writing clean,
-          optimized code, ensuring responsive UI designs, and building scalable
-          architectures. <br />
-          🔹 <strong>Tech Stack:</strong> React, Context API, Node.js, Express,
-          MySQL, Firebase, REST APIs, JavaScript, HTML/CSS, Git. <br />
-          🔹 <strong>Future Goals:</strong> I aim to refine my expertise,
-          contribute to real-world projects, and continue mastering full-stack
-          development for industry-ready applications.
+          I’m <strong>Hiwot</strong>, a full-stack web developer passionate
+          about building clean, intuitive, and user-focused applications. Over
+          the past two years, I’ve developed several full-stack projects that
+          simulate production-level challenges:
         </p>
+
+        <ul>
+          <li>
+            <strong>Amazon Clone</strong> – E-commerce platform built with React
+            and Firebase, featuring category-based product listings, a cart
+            system, protected routes, and Stripe payments.
+          </li>
+          <li>
+            <strong>Social Media App</strong> – A React + Node.js app for user
+            authentication, profile management, real-time posts, and follow
+            system.
+          </li>
+          <li>
+            <strong>G3 Auto Repair App</strong> – Service management system
+            built for real business needs, tracking customers, vehicles, and
+            workflows.
+          </li>
+        </ul>
+
+        <p>
+          My experience is hands-on and self-driven—focused on writing scalable
+          and maintainable code across the stack.
+        </p>
+
+        <p>
+          🔹 <strong>Tech Stack:</strong> React, Node.js, Express, MySQL,
+          Firebase, Context API, REST APIs, JavaScript, HTML/CSS, Git.
+        </p>
+
         <a href="#contact" className="btn">
           Let’s Connect
         </a>
