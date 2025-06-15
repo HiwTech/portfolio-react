@@ -30,17 +30,14 @@ function About() {
             workflows.
           </li>
         </ul>
-
         <p>
           My experience is hands-on and self-driven—focused on writing scalable
           and maintainable code across the stack.
         </p>
-
         <p>
           🔹 <strong>Tech Stack:</strong> React, Node.js, Express, MySQL,
           Firebase, Context API, REST APIs, JavaScript, HTML/CSS, Git.
         </p>
-
         <a href="#contact" className="btn">
           Let’s Connect
         </a>
