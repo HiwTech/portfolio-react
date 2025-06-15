@@ -1,0 +1,17 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+  height: 100vh;
+  /* background: white; */
+  background: linear-gradient(135deg, #2C3E50 0%, #4CA1AF 100%);
+
+
+
+
+
+  padding: 40px;
+  color: black;
+}
