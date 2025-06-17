@@ -22,7 +22,7 @@ function Portfolio() {
       image: g3AutoRepair,
       link: "https://drive.google.com/file/d/10JhYZ9Dinq7Aj1YIS-RPaH3zamYrmK3o/view?usp=drive_link",
       description:
-        "A full-stack web application designed to streamline customer and service management for an auto repair business. Built with React, Node.js, MySQL, and Bootstrap.",
+        "A full-stack web application designed to streamline customer and service management for an auto repair business.It features a secure Admin Dashboard with protected routes, allowing only authorized users to access information. Built with React, Node.js, and MySQ.",
       GitHubLink: "https://github.com/SamuelT19/AbeGarage-GROUP",
     },
     {
