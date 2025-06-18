@@ -30,7 +30,7 @@ function Navbar() {
           duration={500}
           className="desktopMenuListItem"
         >
-         About
+          About
         </Link>
         <Link
           activeClass="active"
@@ -53,6 +53,17 @@ function Navbar() {
           className="desktopMenuListItem"
         >
           Projects
+        </Link>
+        <Link
+          activeClass="active"
+          to="resume"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          Resume
         </Link>
       </div>
       <button

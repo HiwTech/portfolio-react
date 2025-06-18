@@ -38,8 +38,14 @@ function About() {
           🔹 <strong>Tech Stack:</strong> React, Node.js, Express, MySQL,
           Firebase, Context API, REST APIs, JavaScript, HTML/CSS, Git.
         </p>
-        <a href="#contact" className="btn">
-          Let’s Connect
+        <a
+          href="/UpdatedResume6.17.2025.pdf"
+          rel="noopener noreferrer"
+          download="HiwotResume.pdf"
+          className="btn"
+          id="resume"
+        >
+          Download my resume
         </a>
       </div>
     </section>
