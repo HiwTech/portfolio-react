@@ -97,7 +97,7 @@ const HomePage = () => {
       </WelcomeBanner>
 
       {/* Featured Project Section */}
-      {/* <FeaturedSection>
+    /   <FeaturedSection>
         <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
           Featured Project
         </h2>
@@ -114,7 +114,7 @@ const HomePage = () => {
             View Details
           </ViewDetailsButton>
         </ProjectCard>
-      </FeaturedSection> */}
+      </FeaturedSection> 
         </PageContainer>
   );
 };

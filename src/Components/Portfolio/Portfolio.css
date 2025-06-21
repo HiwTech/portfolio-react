@@ -1,107 +1,111 @@
 #works {
-  margin: 0 auto ;
-  min-height: calc(100vh - 4rem);
-  width: 100vw;
-  max-width: 60rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 70rem;
+  padding: 4rem 1rem;
+  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+  color: white;
   text-align: center;
-  padding: 2rem 1rem;
+  overflow: hidden;
 }
 
 #works h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
   color: #FFD700;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
 .worksImgs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 65rem;
-  
+  gap: 2rem;
 }
 
 .imageContainer {
   position: relative;
-  width: 30%;
-  min-width: 10rem;
+  width: 29%;
+  min-width: 250px;
   height: 300px;
+  border-radius: 15px;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
- 
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(4px);
+}
+
+.imageContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 22px rgba(255, 215, 0, 0.4);
 }
 
 .worksImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
+  filter: brightness(0.85);
 }
 
 .imageContainer:hover .worksImg {
-  transform: scale(1.08);
+  transform: scale(1.1);
+  filter: brightness(1);
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.98);
-  color: #333;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.98), rgba(255, 215, 0, 0.1));
+  color: #111;
   opacity: 0;
-  transition: opacity 0.4s ease;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  text-align: center;
+  transition: opacity 0.5s ease;
+  border-radius: 15px;
   border: 2px solid #FFD700;
+  text-align: center;
 }
 
 .imageContainer:hover .overlay {
   opacity: 1;
 }
 
-.overlayContent {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.overlayContent h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #B8860B;
 }
 
-.overlay h3 {
-  font-size: 1.2rem;
-  color: #222;
+.overlayContent p {
+  font-size: 0.85rem;
+  color: #444;
+  margin-bottom: 0.5rem;
 }
 
-.overlay p {
-  font-size: 0.65rem;
-  color: #667;
-}
-
-.overlay a {
-  color: #B22222;
+.overlayContent a {
   font-weight: 600;
+  color: #B22222;
   text-decoration: none;
-  margin-top: 0.5rem;
+  transition: color 0.3s ease;
 }
 
-.overlay a:hover {
+.overlayContent a:hover {
   text-decoration: underline;
+  color: #ff6347;
 }
 
 .linkIcon {
-  margin-left: 0.3rem;
+  margin-left: 0.4rem;
   vertical-align: middle;
 }
 
-/* Responsive */
 @media (max-width: 1106px) {
   .imageContainer {
     width: 45%;

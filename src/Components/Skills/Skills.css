@@ -1,55 +1,62 @@
 .skills-section {
-  /* background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); */
-  color:white;
   padding: 80px 20px;
   text-align: center;
-  width: auto;
-}.skills-section h2{
-  color: #FFD700;
-}
-
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+  background: radial-gradient(circle at top left, #1a1a1a, #0f0c29, #302b63, #24243e);
+  color: white;
+  overflow: hidden;
+  position: relative;
 }
 
 .section-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #FFD700;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Glowing ring animation behind section */
+.skills-section::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+  animation: rotateGlow 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .skills-grid {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
-  justify-items: center; */
-
-  
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
-  }
-  
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
 
 .skill-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  text-align: center;
 }
 
 .skill-card:hover {
-  transform: scale(1.1);
-}
-
-.skill-icon {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.skill-name {
-  font-size: 1rem;
-}
+  transform: scale(1.12);
+  box-shadow: 0 0 25px rgba(255,255, 255, 0.2), 0 0 50px rgba(255, 215, 0, 0.3);
+  cursor: pointer;}

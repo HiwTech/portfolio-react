@@ -34,18 +34,22 @@
 
 .desktopMenuBtn {
   border: none;
-  background-color: white;
+  background: linear-gradient(90deg, #FFD700, #FFA500);
   padding: .5rem .5rem;
   display: flex;
   align-items: center;
   border-radius: 2rem;
 }
-
+.desktopMenuBtn:hover {
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.9);
+}
 .active {
   color: yellow;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid yellow;
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.9);
 }
+
 
 .navMenu {
   position: absolute;

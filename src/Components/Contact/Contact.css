@@ -46,13 +46,27 @@
   border-radius: 0.5rem;
   background: rgb(40, 40, 40);
 }
+
+
 .submitBtn{
-  background: white;
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(90deg, #FFD700, #FFA500);
+  color: #1a1a1a;
   border: none;
-  border-radius: .5rem;
-  margin: 2rem;
-  padding: 0.75rem 3.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: box-shadow 0.4s ease;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
 }
+
+.submitBtn:hover {
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.9);
+}
+
 .link{
   display: block;
   width: 100%;

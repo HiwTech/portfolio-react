@@ -56,7 +56,7 @@ function Portfolio() {
       <div className="worksImgs">
         {projects.map(
           ({ name, image, link, description, GitHubLink }, index) => (
-            <div className="imageContainer" key={index} data-aos="fade-up">
+            <div className="imageContainer" data-aos="zoom-in-up" key={index}>
               <img src={image} alt={name} className="worksImg" loading="lazy" />
               <div className="overlay">
                 <div className="overlayContent">

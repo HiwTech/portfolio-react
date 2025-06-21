@@ -12,6 +12,8 @@ import HomePage from "./Components/Intro/HomePage";
 
 
 function App() {
+
+  
   return (
     <div>
       <Navbar />
