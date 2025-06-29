@@ -51,34 +51,42 @@ function Portfolio() {
   ];
 
   return (
-    <section id="works">
-      <h2>Projects</h2>
-      <div className="worksImgs">
-        {projects.map(
-          ({ name, image, link, description, GitHubLink }, index) => (
-            <div className="imageContainer" data-aos="zoom-in-up" key={index}>
-              <img src={image} alt={name} className="worksImg" loading="lazy" />
-              <div className="overlay">
-                <div className="overlayContent">
-                  <h3>{name}</h3>
-                  <p>{description}</p>
-                  <a href={GitHubLink}>GitHub Repository</a>
-
-                  {link && (
-                    <a
-                      href={link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`View ${name}`}
-                    >
-                      View Project <FaExternalLinkAlt className="linkIcon" />
-                    </a>
-                  )}
+    <section className="portfolio-section" id="portfolio">
+      <div id="works">
+        <h2>Projects</h2>
+        <div className="worksImgs">
+          {projects.map(
+            ({ name, image, link, description, GitHubLink }, index) => (
+              <div className="imageContainer" data-aos="zoom-in-up" key={index}>
+                <img
+                  src={image}
+                  alt={name}
+                  className="worksImg"
+                  loading="lazy"
+                />
+                <div className="overlay">
+                  <div className="overlayContent">
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                    <a href={GitHubLink}>GitHub Repository</a>
+                    <br />
+                    <br />
+                    {link && (
+                      <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View ${name}`}
+                      >
+                        View Project <FaExternalLinkAlt className="linkIcon" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          )
-        )}
+            )
+          )}
+        </div>
       </div>
     </section>
   );

@@ -45,7 +45,7 @@ function About() {
           className="btn"
           id="resume"
         >
-          Download my resume
+          Download Resume
         </a>
       </div>
     </section>

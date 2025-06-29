@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  background: linear-gradient(135deg, #0f0c29, #050505, #24243e);
 }
 .contactPage h2{
   color:#FFD700 ;
@@ -32,7 +33,6 @@
   justify-content:center;
   width: 90vw;
   max-width: 60rem;
-
   
 }
 .name, .email, .msg{
@@ -72,10 +72,20 @@
   width: 100%;
   
 }
-@media (max-width: 600px) {
-  .contactPage {
+
+.contactPage {
+  padding: 20px;
+  width: auto;
+}
+.name, .email, .msg {
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 680px) {
+  .contactForm {
     padding: 20px;
-    width: auto;
+    width:  90vw;
   }
   .name, .email, .msg {
     font-size: 0.9rem;

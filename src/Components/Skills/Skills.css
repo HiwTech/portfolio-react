@@ -1,7 +1,7 @@
 .skills-section {
   padding: 80px 20px;
   text-align: center;
-  background: radial-gradient(circle at top left, #1a1a1a, #0f0c29, #302b63, #24243e);
+  background: linear-gradient(135deg, #0f0c29, #050505, #24243e);
   color: white;
   overflow: hidden;
   position: relative;
@@ -32,9 +32,14 @@
 @keyframes rotateGlow {
   0% {
     transform: rotate(0deg);
+    
+  }
+  50% {
+    /* background-color: rgb(121, 89, 176);  Intermediate color */
   }
   100% {
     transform: rotate(360deg);
+    background-color: rgba(19, 94, 96, 0.404);
   }
 }
 
@@ -56,7 +61,14 @@
   text-align: center;
 }
 
+.skill-icon{
+  color:#FFD700;
+  font-size: 2.5rem;
+  width: auto;
+ 
+ 
+}
 .skill-card:hover {
   transform: scale(1.12);
-  box-shadow: 0 0 25px rgba(255,255, 255, 0.2), 0 0 50px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 25px rgba(255,255, 255, 0.2), 0 0 50px rgba(60, 255, 0, 0.825);
   cursor: pointer;}

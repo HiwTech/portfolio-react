@@ -5,7 +5,7 @@
   height: 100vh;
   padding: 4rem 2rem;
   
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background: linear-gradient(135deg, #0f0c29, #050505, #24243e);
   color: #f5f5f5;
   gap: 2rem;
   
@@ -17,35 +17,48 @@
 }
 
 .greeting {
-  font-size: 2.5rem;
-  color: #FFD700;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  
+  font-weight: 500;
+  color: white;
+  
   margin-bottom: 0.5rem;
+  letter-spacing: .5px;
 }
+
 
 .name {
-  font-size: 9.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   margin: 0;
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
 }
 
+
+
 .animated-text {
-  font-size: 2.3rem;
-  font-family: monospace;
-  margin-top: 0.5rem;
-  color: #FFD700;
-  background-color: #1a1a1a;
+  font-family: 'Fira Code', monospace;
+  font-size: 2.4rem;
+  font-style: italic;
+  background-color: #111;
+  color: #88ff00af;
+  padding: 0.3rem 0.6rem;
   border-radius: 6px;
-  padding: 0.2rem 0.5rem;
+  display: inline-block;
   position: relative;
+  text-transform: uppercase;
 }
+
 
 .animated-text::after {
   content: '|';
   animation: blink 0.8s infinite;
   margin-left: 4px;
 }
+
 
 @keyframes blink {
   0%, 100% { opacity: 1; }
@@ -62,7 +75,7 @@
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
-  padding: 0.75rem 2rem;
+  padding: 0.7rem 2rem;
   background: linear-gradient(90deg, #FFD700, #FFA500);
   color: #1a1a1a;
   border: none;
@@ -115,9 +128,9 @@
   
   
 
-  .name {
+  /* .name {
     font-size: 3.5rem;
-  }
+  } */
 
   .animated-text {
     font-size: 1.8rem;
@@ -131,5 +144,33 @@
   .btn {
     padding: 0.5rem 1.5rem;
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .intro-section{
+    margin-bottom: auto;
+  }
+  .greeting {
+    font-size: 2.5rem;
+  }
+
+  .name {
+    font-size: 3.8rem;
+  }
+
+  .animated-text {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  a.btn {
+    display: none;
+  }
+  .intro-right{
+    margin-bottom: 3rem;
   }
 }

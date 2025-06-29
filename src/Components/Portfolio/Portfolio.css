@@ -1,11 +1,23 @@
+.portfolio-section {
+  width: 100vw;
+  background: linear-gradient(135deg, #0f0c29, #050505, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+
 #works {
   position: relative;
   z-index: 1;
   margin: 0 auto;
   min-height: 100vh;
-  max-width: 70rem;
+  max-width: 60rem;
   padding: 4rem 1rem;
-  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+  background: linear-gradient(135deg, #214d50, #050505, #24243e);
   color: white;
   text-align: center;
   overflow: hidden;
@@ -59,7 +71,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.98), rgba(255, 215, 0, 0.1));
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.97), rgba(255, 215, 0, 0.1));
   color: #111;
   opacity: 0;
   display: flex;
@@ -85,7 +97,7 @@
 
 .overlayContent p {
   font-size: 0.85rem;
-  color: #444;
+  color: #040404;
   margin-bottom: 0.5rem;
 }
 
@@ -108,12 +120,28 @@
 
 @media (max-width: 1106px) {
   .imageContainer {
-    width: 45%;
+    flex-basis: 45%;
+    max-width: 45%;
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 760px) {
   .imageContainer {
-    width: 90%;
+    flex-basis: 60%;
+    max-width: 60%;
   }
 }
+
+@media (max-width: 480px) {
+  .imageContainer {
+    flex-basis: 90%;
+    max-width: 80%;
+    align-items: center;
+  }
+}
+
+
+  
+
+
+

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Intro.css";
 import PortfolioImg from "../../assets/img/portfolio/hiwot.jpeg";
+import PortfolioImg1 from "../../assets/img/portfolio/hiwot.jpg";
 import HomePage from "./HomePage";
 
 const titles = [
@@ -39,8 +40,8 @@ function Intro() {
   return (
     <section className="intro-section" id="intro">
       <div className="intro-left">
-        <h2 className="greeting">Crafting Experiences, One Pixel at a Time</h2>
-        <h1 className="name">Hiwot</h1>
+        <h2 className="greeting">Built from Curiosity. Ready for Production</h2>
+        <h1 className="name">Hello I 'm Hiwot</h1>
         <h3 className="animated-text">{displayedText}</h3>
         <p className="description">
           Passionate React developer delivering responsive, and dynamic
@@ -51,7 +52,7 @@ function Intro() {
         </a>
       </div>
       <div className="intro-right">
-        <img src={PortfolioImg} alt="Hiwot" className="profile-img" />
+        <img src={PortfolioImg1} alt="Hiwot" className="profile-img" />
       </div>
     </section>
   );
