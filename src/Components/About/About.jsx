@@ -39,7 +39,7 @@ function About() {
           Firebase, Context API, REST APIs, JavaScript, HTML/CSS, Git.
         </p>
         <a
-          href="/Updated Resume6.202025.pdf"
+          href="/UpdatedResume10.25.20251.pdf"
           rel="noopener noreferrer"
           download="HiwotResume.pdf"
           className="btn"

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Intro.css";
 import PortfolioImg from "../../assets/img/portfolio/hiwot.jpeg";
 import PortfolioImg1 from "../../assets/img/portfolio/hiwot.jpg";
+import hiwot from "../../assets/img/portfolio/hiwotPicNew.jpg";
 import HomePage from "./HomePage";
 
 const titles = [
@@ -52,7 +53,7 @@ function Intro() {
         </a>
       </div>
       <div className="intro-right">
-        <img src={PortfolioImg1} alt="Hiwot" className="profile-img" />
+        <img src={hiwot} alt="Hiwot" className="profile-img" />
       </div>
     </section>
   );
